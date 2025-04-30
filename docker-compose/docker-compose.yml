@@ -1,0 +1,10 @@
+services:
+  db:
+    ports:
+      - 5432:5432
+    image: postgres:latest
+    container_name: servlet_hw_db
+    environment:
+      - POSTGRES_DB=notetag
+      - POSTGRES_PASSWORD=testuser
+      - POSTGRES_USER=testuser
